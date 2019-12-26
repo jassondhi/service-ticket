@@ -1,0 +1,10 @@
+<div style="border: 1px; border-style: hidden, border-radius: 1px; padding: 1px;">
+<h5> Comments </h5>
+    <div style="border: 1px; border-color: black; border-radius: 1px; padding: 1px;  ">
+    <% @ticket.comments.each do |comment| %>
+        <p><strong><%= comment.username %></strong> replied: </p> 
+        <p><%= comment.body %></p>
+        <p><%= link_to 'Delete Comment', [comment.ticket, comment], method: :delete, data: { confirm: 'Delete Comment?' } %></p>
+        </div>
+    <% end %>
+    

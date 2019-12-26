@@ -1,0 +1,24 @@
+<br>
+<h1>Add Ticket</h1>
+
+<%= form_for :ticket, url: tickets_path do |f| %>
+    <% if @ticket.errors.any? %> 
+    <% @ticket.errors.full_messages.each do |msg| %> 
+        <div class ="alert alert-danger"><%= msg %></div>
+        <% end %>
+    <% end %>
+    <p>
+        <%= f.label :title %> <br>
+        <%= f.text_field(:title, {:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.label :body %> <br>
+        <%= f.text_area(:body,{:class => 'form-control'}) %>
+    </p>
+
+    <p>
+        <%= f.submit({:class => 'btn btn-primary'}) %>
+    </p>
+
+<% end %>

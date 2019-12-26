@@ -1,0 +1,17 @@
+
+<div style="border: 1px; border-style: hidden, border-radius: 1px; padding: 15px;">
+<h2><%= @ticket.title %></h2>
+</div>
+<div style="border: 1px; border-style: hidden, border-radius: 1px; padding: 15px;">
+<p><%= @ticket.body %></p>
+</div>
+<p> Posted: <%= timeago(@ticket.created_at) %></p>
+<hr> 
+<%= link_to "Edit", edit_ticket_path(@ticket), :class => 'btn btn-info' %>
+<%= link_to "Delete", ticket_path(@ticket), method: :delete, data: {confirm: 'Revoke Ticket?'}, :class => 'btn btn-danger' %>
+<hr>
+
+
+<%= render 'comments/comments' %> 
+<br>
+<%= render 'comments/form' %> 
