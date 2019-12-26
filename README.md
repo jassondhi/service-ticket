@@ -3,7 +3,7 @@
 <!-- INTRODUCTION -->
 <br />
 
-[![Ticket Forum Homepage](/app/assets/images/homepage.jpg?raw=true "Index")
+[![Ticket Forum Homepage](/app/assets/images/homepage.png?raw=true "Index")
 
   <p align="center">
     A simple help forum to post issues and receive feedback.
@@ -69,8 +69,8 @@ $ rails server
 
 One can open or revoke tickets and comment on open issues posted by other people. The poster may revoke the ticket once the issue is resolved, but is encouraged to leave it on the forum so that other people with similar issues can also see the comments. 
 
-[![Sample Ticket Page](/app/assets/images/sampleticket.jpg?raw=true "Sample Ticket")
-[![Create Ticket Page](/app/assets/images/createpage.jpg?raw=true "Create Page")
+[![Sample Ticket Page](/app/assets/images/sampleticket.png?raw=true "Sample Ticket")
+[![Create Ticket Page](/app/assets/images/createpage.png?raw=true "Create Page")
 
 
 Further steps would include implementing a search feature and authentication using a Gem like [devise](https://github.com/plataformatec/devise), so only certain users would be able to delete or edit posts. I also plan to add an archive feature so non-active tickets can be seen but not commented on. 
